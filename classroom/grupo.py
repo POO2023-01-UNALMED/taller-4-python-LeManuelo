@@ -10,7 +10,7 @@ class Grupo:
 
     def listadoAsignaturas(self, **kwargs):
         for x in kwargs.values():
-            if type(self.asignaturas)==list:
+            if type(self._asignaturas)==list:
                 self._asignaturas.append(Asignatura(x))
             else:
                 self._asignaturas=[]

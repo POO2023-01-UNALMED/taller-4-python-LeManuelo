@@ -16,8 +16,7 @@ class Grupo:
                 self._asignaturas=[]
                 self._asignaturas.append(Asignatura(x))
 
-    def agregarAlumno(self, alumno, lista=[]):
-        lista.append(alumno)
+    def agregarAlumno(self, alumno, lista=None):
         if type(lista)==list:
             lista.append(alumno)
             if type(self.listadoAlumnos)==list:

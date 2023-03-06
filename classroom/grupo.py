@@ -12,6 +12,9 @@ class Grupo:
         for x in kwargs.values():
             if type(self.asignaturas)==list:
                 self._asignaturas.append(Asignatura(x))
+            else:
+                self._asignaturas=[]
+                self._asignaturas.append(Asignatura(x))
 
     def agregarAlumno(self, alumno, lista=[]):
         lista.append(alumno)
